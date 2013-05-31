@@ -1,1 +1,18 @@
-<p>xXx</p>
+<div ng-controller="formCtrl">
+
+	<div>Name:</div>
+	<input type="text" ng-model="user.name" required>
+
+	<div>Address:</div>
+	<input type="text" ng-model="user.address.street" size="2" required></br>
+	<input type="text" ng-model="user.address.place" size="2" required>
+	<input type="text" ng-model="user.address.plz" size="2" required>
+
+	<div>Contact:</div>
+	[ <a href="" ng-click="addContact()"></a> ]
+
+	<div ng-model="contact in user.contacts">
+
+	</div>
+
+</div>
