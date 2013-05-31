@@ -5,7 +5,9 @@
 angular.module('appr', ['appr.filters', 'appr.services', 'appr.directives', 'appr.controllers']).
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-    	when('/form', {templateUrl: 'partials/form.html', controller: 'formCtrl'}).
-    	when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'}).
+    	when('/room0', {templateUrl: 'partials/room0.html', controller: 'roomCtrl'}).
+    	when('/room1', {templateUrl: 'partials/room1.html', controller: 'roomCtrl'}).
+    	when('/room2', {templateUrl: 'partials/room2.html', controller: 'roomCtrl'}).
+    	when('/room3', {templateUrl: 'partials/room3.html', controller: 'roomCtrl'}).
     	otherwise({redirectTo: '/home'});
   }]);
