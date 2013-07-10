@@ -4,9 +4,18 @@
 
 var appr = angular.module('appr.controllers', []);
 
-appr.controller('roomCtrl', function($scope, $location, $timeout){
+appr.controller('roomCtrl', function($scope, $location, $timeout, $rootScope, $http){
+
+	$http.get('rooms/rooms.json').success(function (ddd) {
+    	$scope.rows = ddd;
+
+
+    	console.log(ddd);
+  	});
+
 	$scope.alert = function(){
 		alert('hello');
+		//console.log(data);
 	};
 	$scope.startTime;
 	$scope.endTime;
@@ -25,6 +34,7 @@ appr.controller('roomCtrl', function($scope, $location, $timeout){
 		var string = $location.path();
 		string = string.replace('/','');
 		return string;
+		//TODO: take room out of json file
 	};
 	function getTopic(){
 		return "Eating peanuts";
