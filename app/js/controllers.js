@@ -7,6 +7,12 @@ var appr = angular.module('appr.controllers', []);
 =======
 angular.module('appr.controllers', []).
   controller('formCtrl', [function() {
+<<<<<<< HEAD
+=======
+
+  }])
+  .controller('MyCtrl2', [function() {
+>>>>>>> parent of 25d8c50... add content
 
   }])
   .controller('MyCtrl2', [function() {
