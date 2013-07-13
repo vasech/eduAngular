@@ -2,15 +2,7 @@
 
 /* Controllers */
 
-<<<<<<< HEAD
 var appr = angular.module('appr.controllers', []);
-=======
-angular.module('appr.controllers', []).
-  controller('formCtrl', [function() {
-
-  }])
-  .controller('MyCtrl2', [function() {
->>>>>>> parent of 25d8c50... add content
 
 appr.controller('roomCtrl', function($scope, $location, $timeout){
 	$scope.alert = function(){
