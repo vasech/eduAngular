@@ -1,5 +1,14 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div ng-controller="roomCtrl">
+
+	<div>{{data.date}}</div>
+	<a href="#">{{data.room}}</a>
+	<div>{{data.topic}}</div>
+	<div>{{data.start}}</div>
+	<div>{{data.end}}</div>
+	<div>{{data.during}}</div>
+	<div>{{currTime}}</div>
+	<li ng-repeat="employees in employees">
+		{{employees.name}}
+	</li>
+
+</div>
